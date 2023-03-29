@@ -1,0 +1,21 @@
+{% extends 'padre.html' %}
+{% block title %} eliminar blog {% endblock%}
+{% block content %}
+
+
+
+
+<h1>eliminar blog</h1>
+<br/><br/>
+<h3> Eliminando {{post.title}}</h3>
+
+<br/>
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        <strong> estás seguro que se desea eliminar?</strong><br/>
+        <button class="btn btn-success">(Eliminar)</button>
+
+</div>
+
+{% endblock %}

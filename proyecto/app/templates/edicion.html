@@ -1,0 +1,15 @@
+{% extends 'padre.html' %}
+{% block title %} Editar el Blog {% endblock%}
+{% block content %}
+
+
+
+
+<h1>Editar el Blog</h1>
+<br/><br/>
+<form method="POST">
+    {% csrf_token %}
+    {{ form.as_ul }}
+    <button class="btn btn-success">(Editar)</button>
+
+{% endblock %}
